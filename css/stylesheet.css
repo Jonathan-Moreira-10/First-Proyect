@@ -22,6 +22,7 @@ width: 100%;
 height: 55vh;
 }
 
+
 /*Logo*/
 .logo-content{
     display: flex;
@@ -59,20 +60,21 @@ footer {
     font-weight: 500;
     font-size: 40px;
     line-height: 1.4;
-    color: #30bdffdf;
+    color: #198dc3d1;
 }
 
 .text-card p {
     font-weight: 200;
     font-size: 25px;
     line-height: 1.4;
-    color: #585858;
+    color: #393636;
 }
 .img-card {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
-    border-radius: 20px;
+    opacity: 70%;
+    
 }
 .text-message {
     border: 2px solid #fff;
@@ -82,7 +84,7 @@ footer {
     width: 200px;
     height: 200px;
     object-fit: cover;
-    border-radius: 100%;
+    border-radius: 80%;
 }
 .logo-footer {
     width: 50px;
@@ -106,25 +108,12 @@ footer {
     object-fit: cover;
 }
 
-.grid-gallery {
-    display: grid;
-    /*
-    background-color: rgb(9, 155, 246);*/
-    grid-template-columns: repeat(auto-fill, minmax(320px,1fr));
-    grid-auto-rows: minmax(300px, auto);
-    grid-auto-flow: dense;
-    gap: 10px;
-    padding: 10px;
-}
-.grid-gallery img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
+
+
 .img-card-about{
     width: 100%;
     height: auto;
-    object-fit: cover;
+   
 }
 .navbar {
     position: sticky;
@@ -138,4 +127,108 @@ footer {
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+/*Hover*/
+.nav-item a{
+    color: #fff;
+    border-radius: 10px;
+}
+
+.nav-item a:hover {
+    background-color: white;
+    transition: 1s;
+    border-radius: 20px;
+}
+.nav-item a:hover{
+    color: black;
+}
+form .btn{
+    background-color: #fff;
+    color: black;
+}
+form .btn:hover{
+    transition: 1s;
+    background-color: black;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.navbar-brand img:hover{
+    transition: 1s;
+    border: 2px solid #fff;
+}
+.form-control-contact {
+    border-radius: 20px;
+    border: solid black;
+    padding: 10px;
+}
+
+.link-banner-left a{
+    text-decoration: none;
+}
+.link-banner-left {
+    border-bottom: 1px solid black;
+    overflow: hidden;
+
+}
+
+
+.link-banner-left :hover img{
+    transition: 1s;
+    opacity: 100%;
+
+}
+.link-banner-right a{
+    text-decoration: none;
+}
+.link-banner-right{
+    border-top: 1px solid black;
+    overflow: hidden;
+}
+.link-banner-right:hover img{
+    transition: 1s;
+    opacity: 100%;
+}
+.submit:hover{
+    transition: 1s;
+    background-color: #30bdffdf;
+}
+.card:hover button{ 
+    background-color: #30bdffdf;
+    width: 300px;
+    transition: 1s;
+    border-radius: 20px;
+    color: black;
+}
+.card-body a{
+    text-decoration: none;
+}
+.grid-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0,5s;
+}
+.grid-img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.grid-img img:hover{
+    transition: 1s;
+    transform: scale(2);
+}
+
+.grid-gallery {
+    display: grid;
+    /*
+    background-color: rgb(9, 155, 246);*/
+    grid-template-columns: repeat(auto-fill, minmax(320px,1fr));
+    grid-auto-rows: minmax(300px, auto);
+    grid-auto-flow: dense;
+    gap: 10px;
+    padding: 10px;
+    overflow: hidden;
+    place-items: center;
 }
