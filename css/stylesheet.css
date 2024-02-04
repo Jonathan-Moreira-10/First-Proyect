@@ -6,6 +6,42 @@
 
 /*Navbar*/
 
+.img-nav {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.navbar {
+    position: sticky;
+    top:0;
+}
+.navbar-expand-lg {
+    position: sticky;
+    top:0;
+}
+.nav-item a{
+    color: #fff;
+    border-radius: 10px;
+}
+
+.nav-item a:hover {
+    background-color: white;
+    transition: 1s;
+    border-radius: 20px;
+}
+.nav-item a:hover{
+    color: black;
+}
+.navbar-brand img:hover{
+    transition: 1s;
+    border: 2px solid #fff;
+}
+
+/*Containers*/
+
+/*index*/
+
 /*Carousel*/
 
 .slide {
@@ -21,7 +57,6 @@
 width: 100%;
 height: 55vh;
 }
-
 
 /*Logo*/
 .logo-content{
@@ -40,9 +75,39 @@ height: 55vh;
     height: 180px;
 }
 
-/*Containers*/
-
-
+/*Contenido*/
+.img-card {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 70%;
+}
+    .link-banner-left a{
+        text-decoration: none;
+    }
+    .link-banner-left {
+        border-bottom: 1px solid black;
+        overflow: hidden;
+    
+    }
+    
+    
+    .link-banner-left :hover img{
+        transition: 1s;
+        opacity: 100%;
+    
+    }
+    .link-banner-right a{
+        text-decoration: none;
+    }
+    .link-banner-right{
+        border-top: 1px solid black;
+        overflow: hidden;
+    }
+    .link-banner-right:hover img{
+        transition: 1s;
+        opacity: 100%;
+    }
 
 /*footer*/
 footer {
@@ -52,33 +117,6 @@ footer {
 .form-footer {
     display: flex;
     flex-direction: column;
-}
-/*Fonts*/
-
-
-.text-card {
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 1.4;
-    color: #198dc3d1;
-}
-
-.text-card p {
-    font-weight: 200;
-    font-size: 25px;
-    line-height: 1.4;
-    color: #393636;
-}
-.img-card {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 70%;
-    
-}
-.text-message {
-    border: 2px solid #fff;
-    resize: none;
 }
 .img-footer {
     width: 200px;
@@ -96,102 +134,32 @@ footer {
     list-style-type: none;
     list-style: none;
 }
-.img-nav {
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-}
 
-.img-card-deportes {
-    width: 100%;
-    height: 55vh;
-    object-fit: cover;
-}
+/*Fonts*/
 
 
-
-.img-card-about{
-    width: 100%;
-    height: auto;
-   
-}
-.navbar {
-    position: sticky;
-    top:0;
-}
-.navbar-expand-lg {
-    position: sticky;
-    top:0;
-}
-.img-card-contact {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-/*Hover*/
-.nav-item a{
-    color: #fff;
-    border-radius: 10px;
+.text-card {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.4;
+    color: #198dc3d1;
 }
 
-.nav-item a:hover {
-    background-color: white;
-    transition: 1s;
-    border-radius: 20px;
+.text-card p {
+    font-weight: 200;
+    font-size: 25px;
+    line-height: 1.4;
+    color: #393636;
 }
-.nav-item a:hover{
-    color: black;
-}
-form .btn{
-    background-color: #fff;
-    color: black;
-}
-form .btn:hover{
-    transition: 1s;
-    background-color: black;
-    color: #fff;
-    border: 1px solid #fff;
-}
-.navbar-brand img:hover{
-    transition: 1s;
+
+    
+
+.text-message {
     border: 2px solid #fff;
-}
-.form-control-contact {
-    border-radius: 20px;
-    border: solid black;
-    padding: 10px;
+    resize: none;
 }
 
-.link-banner-left a{
-    text-decoration: none;
-}
-.link-banner-left {
-    border-bottom: 1px solid black;
-    overflow: hidden;
-
-}
-
-
-.link-banner-left :hover img{
-    transition: 1s;
-    opacity: 100%;
-
-}
-.link-banner-right a{
-    text-decoration: none;
-}
-.link-banner-right{
-    border-top: 1px solid black;
-    overflow: hidden;
-}
-.link-banner-right:hover img{
-    transition: 1s;
-    opacity: 100%;
-}
-.submit:hover{
-    transition: 1s;
-    background-color: #30bdffdf;
-}
+/*Productos*/
 .card:hover button{ 
     background-color: #30bdffdf;
     width: 300px;
@@ -199,9 +167,23 @@ form .btn:hover{
     border-radius: 20px;
     color: black;
 }
+.card:hover img{
+    transition: 1s;
+    transform: scale(1.3);
+}
 .card-body a{
     text-decoration: none;
 }
+.img-product {
+    text-align: center;
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    padding: 10px;
+}
+
+/*Deportes*/
+
 .grid-img img{
     width: 100%;
     height: 100%;
@@ -217,7 +199,7 @@ form .btn:hover{
 
 .grid-img img:hover{
     transition: 1s;
-    transform: scale(2);
+    transform: scale(1.5);
 }
 
 .grid-gallery {
@@ -225,7 +207,75 @@ form .btn:hover{
     /*
     background-color: rgb(9, 155, 246);*/
     grid-template-columns: repeat(auto-fill, minmax(320px,1fr));
-    grid-auto-rows: minmax(300px, auto);
+    grid-auto-rows: minmax(300px, 300px);
+    grid-auto-flow: dense;
+    gap: 10px;
+    padding: 10px;
+    overflow: hidden;
+    place-items: center;
+}
+
+
+/*Sobre-Nosotros*/
+
+
+
+
+.img-card-about{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+
+/*Contancto*/
+
+form .btn{
+    background-color: #fff;
+    color: black;
+}
+form .btn:hover{
+    transition: 1s;
+    background-color: black;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.form-control-contact {
+    border-radius: 20px;
+    border: solid black;
+    padding: 10px;
+}
+
+.submit:hover{
+    transition: 1s;
+    background-color: #30bdffdf;
+}
+
+.grid-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0,5s;
+}
+.grid-img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.grid-img img:hover{
+    transition: 1s;
+    transform: scale(1.5);
+}
+
+.grid-gallery {
+    display: grid;
+    /*
+    background-color: rgb(9, 155, 246);*/
+    grid-template-columns: repeat(auto-fill, minmax(320px,1fr));
+    grid-auto-rows: minmax(300px, 300px);
     grid-auto-flow: dense;
     gap: 10px;
     padding: 10px;
