@@ -1,0 +1,27 @@
+
+.card button{
+    transition-duration: 1s;
+}
+.card:hover button{ 
+    background-color:$maincolor;
+    width: 300px;
+    transition: 1s;
+    border-radius: 20px;
+    color: black;
+}
+
+.card-body a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.img-product {
+    @include img(150px,150px,cover);
+    text-align: center;
+    padding: 10px;
+    transition-duration: 1s;}
+    .card:hover img{
+        transition: 1s;
+        transform: scale(1.3);
+    }

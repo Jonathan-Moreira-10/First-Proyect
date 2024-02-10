@@ -1,0 +1,10 @@
+.slide {
+    margin:  10px,0,10px,0;
+    padding: 0px;
+}
+.slide img {
+    @include img(100%,55vh,cover);
+ }
+.carousel-inner {
+    @include img(100%,55vh,cover);
+}

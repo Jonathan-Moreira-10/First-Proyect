@@ -1,0 +1,21 @@
+footer {
+    background-color: black;
+    color: #ffff;
+}
+.form-footer {
+    display: flex;
+    flex-direction: column;
+}
+.img-footer {
+    @include img(200px,200px,cover);
+    border-radius: 80%;
+}
+.logo-footer {
+    @include img(50px,50px,cover);
+    border-radius: 100%;
+}
+.reds-socials ul{
+    text-decoration: none;
+    list-style-type: none;
+    list-style: none;
+}

@@ -1,0 +1,19 @@
+* {
+    font-family: $tipography;
+}
+
+
+.text-card {
+    @include text (500,40px,1.4,$maincolor)
+}
+
+.text-card p {
+    @include text ( 200,25px,1.4,$secondary-color)
+}
+
+    
+
+.text-message {
+    border: $textborder;
+    resize: none;
+}

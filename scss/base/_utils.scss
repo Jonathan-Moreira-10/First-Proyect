@@ -1,0 +1,11 @@
+@mixin img ($width ,$height, $cover){
+    width:$width;
+    height: $height;
+    object-fit: $cover;
+}
+@mixin text ($weight,$size,$height,$color){
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+    color:$color;
+}

@@ -1,0 +1,61 @@
+
+
+
+.logo-content{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    object-fit: contain;
+    justify-content: center;
+    background-color: black;
+    align-items: center;
+    margin: auto;
+    color: #ffff;
+    text-align: center;
+}
+.logo img {
+    height: 180px;
+}
+
+/*Contenido*/
+
+.img-card {
+    @include img(100%,100%,cover);
+    opacity: 70%;
+    transition-duration: 1s;
+}
+@media (max-width: 767px) {
+    .img-card {
+       opacity: 100%;
+    }
+  }
+    
+    .link-banner-left {
+        border-bottom: 1px solid black;
+        overflow: hidden;
+        object-fit: cover;}
+
+            .link-banner-left a{
+                text-decoration: none;
+                &:hover img{
+                    opacity: 100%;
+                }
+            }
+        
+    
+    
+
+    
+    .link-banner-right a{
+        text-decoration: none;
+    }
+    .link-banner-right{
+        border-top: 1px solid black;
+        overflow: hidden;
+        object-fit: cover;
+    }
+    .link-banner-right:hover img{
+        transition: 1s;
+        opacity: 100%;
+    }
+    

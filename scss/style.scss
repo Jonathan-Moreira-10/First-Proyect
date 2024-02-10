@@ -1,0 +1,25 @@
+/*Variables*/
+@import "base/vars";
+
+@import "base/utils";
+
+/*Fuente*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+/*index*/
+@import "layout/index";
+/*Productos*/
+@import "layout/productos";
+/*Sobre-Nosotros*/
+@import "layout/sobre-nosotros";
+/*Deportes*/
+@import "layout/deportes";
+/*Contancto*/
+@import "layout/contacto";
+/*Navbar*/
+@import "components/navbar";
+/*Carousel*/
+@import "components/carousel";
+/*footer*/
+@import "components/footer";
+/*Textos*/
+@import "components/textos";

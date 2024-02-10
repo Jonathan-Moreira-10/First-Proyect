@@ -1,0 +1,32 @@
+.gradient {
+    background: rgb(20,188,222);
+        background: linear-gradient(90deg, rgba(20,188,222,1) 0%, rgba(145,231,249,1) 50%, rgba(8,99,117,1) 100%);
+}
+
+form .btn{
+    background-color: #fff;
+    color: black;
+    &:hover{
+        transition: 1s;
+        background-color: black;
+        color: #fff;
+        border: 1px solid #fff;
+    }
+}
+
+.form-control-contact {
+    border-radius: 20px;
+    border: solid black;
+    padding: 10px;
+}
+.submit{
+    transition:all 1s;
+    border-radius: 20px;
+    &:hover{
+        background-color:$maincolor;
+        border-radius: 20px;
+        color: black;
+        transition:all 1s;
+        background-color: #30bdffdf;
+    }
+}
