@@ -2,3 +2,9 @@
     @include img (100%,100%,cover);
    
 }
+.about {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    writing-mode:random($limit: 1);
+}
