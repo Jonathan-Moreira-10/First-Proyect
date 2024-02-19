@@ -40,6 +40,10 @@
         background: rgb(20,188,222);
         background: linear-gradient(90deg,#198dc3d1), rgba(8,99,117,1) 100%;
     }
+    .tittle {
+        display: flex;
+        flex-direction: column;
+    }
 
     @media (max-width: 830px) {
         .sports {

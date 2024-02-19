@@ -156,6 +156,11 @@
   background: linear-gradient(90deg, rgba(25, 141, 195, 0.8196078431)), rgb(8, 99, 117) 100%;
 }
 
+.tittle {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (max-width: 830px) {
   .sports {
     font-weight: 500;
