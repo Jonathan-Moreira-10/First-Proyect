@@ -3,8 +3,10 @@
    
 }
 .about {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    writing-mode:random($limit: 1);
+    background: url(../assets/natacion/aguadefondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-info {
+    background-color: white;
 }

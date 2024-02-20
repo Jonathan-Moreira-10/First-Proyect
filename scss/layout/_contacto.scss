@@ -4,7 +4,7 @@
 }
 
 form .btn{
-    background-color: #fff;
+    background-color: hsl(0, 0%, 100%);
     color: black;
     &:hover{
         transition: 1s;
@@ -19,6 +19,7 @@ form .btn{
     border: solid black;
     padding: 10px;
 }
+
 .submit{
     transition:all 1s;
     border-radius: 20px;
