@@ -1,12 +1,74 @@
-.img-card-about{
-    @include img (100%,100%,cover);
-   
-}
-.about {
+/*Carousel*/
+.slider-section {
     background: url(../assets/natacion/aguadefondo2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    @include flex-column(flex,none,center,center);
+    width: 100%;
+    height: calc(100% - 80px);
+
+.row {
+    .col-md-10 {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+.slide {
+    height: auto;
+    width: 100%;
 }
-.about-info {
+    .box{
+        @include flex-column(flex,column,flex-start,start);
+    }
+    
+}
+
+.slider_heading{
+    position: relative;
+    top: 15vh;
+    @include flex-column(flex,column,center,center);
+    }
+    h1{
+        @include text(300,50px,1.1,black);
+    }
+    @media (max-width: 767px){
+        .slider_heading{
+            position: static;
+            top: 0;
+        }
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+     position:relative;
+     top:10vh;
+    }
+  
+
+.box-detail{
+    margin: 20px;
     background-color: white;
+    @include flex-column(flex,column,flex-start,center);
+    opacity: 75%;
+    border-radius: 20px;
+    padding:0 10px;
+    h2{
+        @include text (400,40px,1.1,$maincolor);
+        font-family: $tipography;
+    }
+    p{
+        @include text (400,25px,1.1,black);
+        font-family: $tipography;
+    }
 }
+.btn-box{
+    border-radius: 12px;
+    background-color: $maincolor;
+    width: 100px;
+    height: auto;
+    opacity: 100%;
+    text-align: center;
+    a{
+        @include text(300,20px,1.1, white);
+        text-decoration: none;
+    }
+    }
