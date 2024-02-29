@@ -15,7 +15,21 @@ footer {
     border-radius: 100%;
 }
 .reds-socials ul{
-    text-decoration: none;
-    list-style-type: none;
-    list-style: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+     text-decoration: none;
+     list-style-type: none;
+     list-style: none;
+     transition: all 1s;
+     @media(max-width: 767px){
+         flex-direction: column;
+     }
+     li{
+        transition: all .5s;
+        &:hover{
+           transform: scale(1.1);
+        }
+        margin: 5px;
+     }
 }
